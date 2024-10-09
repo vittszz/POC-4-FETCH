@@ -8,9 +8,7 @@ Cabeçalho (head): Aqui, definimos o charset, a viewport (para garantir que a p�
 
 ![image](https://github.com/user-attachments/assets/fbf83519-3e06-491b-b466-e16537c7588e)
 
-Corpo (body):
-
-Temos um título <h1> e um parágrafo <p> para descrever o objetivo da página.
+Corpo (body): Temos um título <h1> e um parágrafo <p> para descrever o objetivo da página.
 
 O botão Get Random User dispara a ação de buscar os dados.
 
