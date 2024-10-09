@@ -17,19 +17,30 @@ Div userInfo: Inicialmente, está oculta com display: none. Quando os dados são
 CSS:
 
 Estilos básicos: Definimos estilos para o corpo da página, para o botão, e para a div que exibirá as informações.
+
 Imagem: A imagem do usuário é exibida como um círculo, com largura e altura definidas.
+
 Botão: O botão tem uma cor de fundo azul e fica mais escuro quando o cursor passa por cima (efeito hover).
+
 JavaScript:
 
 Event Listener: O botão dispara a função fetchRandomUser quando clicado.
+
 Função fetchRandomUser:
 Carregamento: Exibe "Loading..." enquanto a API está sendo consultada.
+
 Fetch: Faz uma requisição à API https://randomuser.me/api/ usando o método assíncrono fetch.
+
 Verificação de sucesso: Verifica se a resposta foi bem-sucedida usando response.ok. Caso contrário, gera um erro.
+
 Extração de dados: Converte a resposta em JSON e extrai informações como nome, email, país e foto do usuário.
+
 Atualização do DOM: Preenche a div com as informações extraídas.
+
 Tratamento de erros: Caso ocorra um erro, exibe uma mensagem de erro na div.
+
 Como Testar:
+
 Crie um arquivo .html e cole o código acima.
 Abra o arquivo no navegador.
 Clique no botão "Get Random User" para buscar e exibir as informações de um usuário aleatório.
