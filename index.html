@@ -4,41 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fetch API Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            font-weight: normal; /* Certificando que o peso da fonte está normal */
+            font-size: 16px; /* Tamanho padrão de fonte */
+        }
+        img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        #userInfo {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            max-width: 300px;
+            font-weight: normal; /* Evita negrito excessivo */
+            font-size: 16px; /* Certifica que o tamanho da fonte está controlado */
+        }
+        h1 {
+            font-size: 24px; /* Controlando o tamanho do título */
+        }
+        p {
+            font-size: 16px; /* Garantindo que os parágrafos usem o tamanho adequado */
+        }
+    </style>
 </head>
 <body>
-    <h1>Random User Info</h1>
+    <h1>Random User Information</h1>
+    <p>This demo shows how to fetch and display random user information using the Fetch API and asynchronous JavaScript (async/await).</p>
+
     <button id="fetchButton">Get Random User</button>
 
-    <div id="userInfo" style="margin-top: 20px;">
-        <!-- User information will be displayed here -->
+    <div id="userInfo" style="display: none;">
     </div>
 
     <script>
-        document.getElementById('fetchButton').addEventListener('click', () => {
-            fetchRandomUser();
-        });
+        // Seleciona o botão e o contêiner onde as informações serão exibidas
+        const fetchButton = document.getElementById('fetchButton');
+        const userInfoDiv = document.getElementById('userInfo');
 
+        // Adiciona um evento ao botão que, ao ser clicado, chama a função de fetch
+        fetchButton.addEventListener('click', fetchRandomUser);
+
+        // Função assíncrona que faz o fetch para a API Random User
         async function fetchRandomUser() {
             try {
+                // Mostra uma mensagem enquanto os dados estão sendo buscados
+                userInfoDiv.innerHTML = '<p>Loading...</p>';
+                userInfoDiv.style.display = 'block';
+
+                // Faz a requisição assíncrona à API
                 const response = await fetch('https://randomuser.me/api/');
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
                 const data = await response.json();
 
-          
+                // Extraindo informações do primeiro usuário da resposta
                 const user = data.results[0];
                 const name = `${user.name.first} ${user.name.last}`;
                 const email = user.email;
                 const country = user.location.country;
                 const picture = user.picture.large;
 
-                document.getElementById('userInfo').innerHTML = `
+                userInfoDiv.innerHTML = `
                     <img src="${picture}" alt="User Picture" />
                     <p><strong>Name:</strong> ${name}</p>
                     <p><strong>Email:</strong> ${email}</p>
                     <p><strong>Country:</strong> ${country}</p>
                 `;
             } catch (error) {
-                console.error('Error fetching user data:', error);
-                document.getElementById('userInfo').textContent = 'Failed to fetch user data.';
+                userInfoDiv.innerHTML = `<p style="color: red;">Error fetching user data: ${error.message}</p>`;
             }
         }
     </script>
