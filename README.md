@@ -5,13 +5,17 @@ Esta POC demonstra como usar o método assíncrono fetch em JavaScript para faze
 
 Estrutura do Código:
 HTML: Criação da interface de usuário, incluindo um botão para buscar os dados e uma área onde as informações do usuário serão exibidas.
+
 CSS: Estilos para organizar o layout e garantir que a interface seja visualmente agradável.
+
 JavaScript: Função assíncrona que usa fetch para obter os dados da API e atualiza o conteúdo da página com as informações do usuário.
 
 Explicação do Código:
 HTML:
 Estrutura: A página contém um título (<h1>), um botão (<button>) e uma div vazia onde as informações do usuário serão exibidas.
+
 Botão: O botão com o ID fetchButton é usado para disparar a requisição à API quando clicado.
+
 Div userInfo: Inicialmente, está oculta com display: none. Quando os dados são carregados, seu conteúdo é atualizado e ela passa a ser visível.
 
 CSS:
