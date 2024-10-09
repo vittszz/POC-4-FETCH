@@ -11,9 +11,7 @@ Cabeçalho (head): Aqui, definimos o charset, a viewport (para garantir que a p�
 Corpo (body): Temos um título <h1> e um parágrafo <p> para descrever o objetivo da página.
 
 O botão Get Random User dispara a ação de buscar os dados.
-
 A div com o ID userInfo é onde os dados serão exibidos.
-
 
 O que é FETCH?
 O método fetch é uma função nativa do JavaScript que permite fazer requisições HTTP assíncronas a servidores. Ele retorna uma Promise, que representa uma operação que será resolvida (com sucesso) ou rejeitada (com erro) no futuro. A Promise permite que lidemos com respostas assíncronas usando .then() ou await.
@@ -21,7 +19,6 @@ O método fetch é uma função nativa do JavaScript que permite fazer requisiç
 2 - Estrutura HTML:
 
 Criamos um layout simples com um botão (Get Random User) e uma div vazia onde as informações do usuário aleatório serão exibidas após a requisição.
-
 O estilo foi adicionado diretamente no arquivo para garantir uma boa apresentação (ex: imagem do usuário redonda, borda na div).
 
 ![image](https://github.com/user-attachments/assets/1d36a7b8-801c-4366-84f5-bf1708a620a6)
