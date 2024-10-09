@@ -10,7 +10,7 @@ Cabeçalho (head): Aqui, definimos o charset, a viewport (para garantir que a p�
 
 Corpo (body):
 
-Temos um título (<h1>) e um parágrafo (<p>) para descrever o objetivo da página.
+Temos um título <h1> e um parágrafo <p> para descrever o objetivo da página.
 
 O botão Get Random User dispara a ação de buscar os dados.
 
