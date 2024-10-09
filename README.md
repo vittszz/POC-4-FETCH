@@ -3,7 +3,9 @@
 Funcionamento:
 
 1 - Estrutura HTML (CABEÇALHO)
+
 Cabeçalho (head): Aqui, definimos o charset, a viewport (para garantir que a página funcione bem em dispositivos móveis) e o título da página. Adicionamos também algumas regras de estilo para a formatação.
+
 ![image](https://github.com/user-attachments/assets/fbf83519-3e06-491b-b466-e16537c7588e)
 
 Corpo (body):
