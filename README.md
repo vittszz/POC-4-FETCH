@@ -33,9 +33,11 @@ Tratamento de Erros: Se a resposta da API falhar (status diferente de 200-299), 
 Exibição dos Dados: Quando a resposta é convertida para JSON, os dados do primeiro usuário são extraídos e exibidos dinamicamente no DOM (nome, e-mail, país, e imagem).
 
 Exibição do DOM:
+
 ![image](https://github.com/user-attachments/assets/2233eacc-9cae-4a82-a72b-ee33f5be3cb7)
 
 Imagem do Usuário: Exibe a foto de perfil retornada pela API.
+
 ![image](https://github.com/user-attachments/assets/d5c45b7e-f595-4abb-b708-38efd4537ed2)
 
 Nome, E-mail e País: Mostra as informações de nome completo, e-mail e país de origem.
