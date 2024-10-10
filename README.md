@@ -7,6 +7,7 @@ Estrutura HTML:
 O que faz essa parte?
 
 Cabeçalho HTML: Define o charset (UTF-8) e configurações de viewport para uma melhor responsividade.
+
 CSS embutido: Define o estilo básico da página, como o estilo do corpo, imagem do usuário (arredondada), e o layout do contêiner onde os dados do usuário serão exibidos.
 
 JavaScript - Função 
