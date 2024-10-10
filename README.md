@@ -42,8 +42,14 @@ Imagem do Usuário: Exibe a foto de perfil retornada pela API.
 
 Nome, E-mail e País: Mostra as informações de nome completo, e-mail e país de origem.
 
-Conclusão da POCç
-Este projeto simples de POC usa o Fetch API para obter dados de forma assíncrona de uma API externa. A função fetchRandomUser trata de fazer a requisição, processar os dados e atualizar a interface do usuário com as informações recebidas.
+Conclusão da POC:
+
+Com essa PoC, consegui demonstrar como a API Fetch pode ser utilizada de forma simples e eficaz para buscar dados de um serviço externo e exibi-los diretamente no navegador, utilizando JavaScript assíncrono. Usando async/await, consegui manter o código mais legível e garantir que as requisições fossem tratadas de forma eficiente, sem travar a página.
+
+Além disso, o tratamento de erros foi implementado para garantir que, se algo der errado, o usuário receba um feedback claro. O exemplo também mostra como é possível pegar informações de uma API pública e renderizá-las no DOM, atualizando o conteúdo da página de maneira dinâmica.
+
+Essa PoC é um bom ponto de partida para entender como consumir APIs e pode ser expandida para projetos maiores, como dashboards que atualizam informações em tempo real ou qualquer aplicação que dependa de dados externos.
+
 
 #PRINT DA EXECUÇÃO DO CODIGO: 
 
