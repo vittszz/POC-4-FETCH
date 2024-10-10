@@ -15,6 +15,7 @@ JavaScript - Função
 ![image](https://github.com/user-attachments/assets/11018793-e34c-410f-b15f-7722d9a0060b)
 
 Seleção de Elementos: document.getElementById() para pegar o botão que será clicado (fetchButton) e o contêiner que exibirá os dados do usuário (userInfoDiv).
+
 Evento de Clique: Quando o botão é clicado, ele aciona a função fetchRandomUser().
 
 
