@@ -19,6 +19,7 @@ Evento de Clique: Quando o botão é clicado, ele aciona a função fetchRandomU
 
 
 Função do Fetch Assincrona:
+
 ![image](https://github.com/user-attachments/assets/1d803b24-8f6b-4eaa-a28c-e16235bc0d7f)
 
 A função principal que faz o fetch dos dados é escrita usando async/await, o que simplifica o tratamento de promessas.
