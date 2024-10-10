@@ -5,14 +5,18 @@ Estrutura HTML:
 ![image](https://github.com/user-attachments/assets/0a5adabe-be30-4aec-bf16-90fac3f5b261)
 
 O que faz essa parte?
+
 Cabeçalho HTML: Define o charset (UTF-8) e configurações de viewport para uma melhor responsividade.
 CSS embutido: Define o estilo básico da página, como o estilo do corpo, imagem do usuário (arredondada), e o layout do contêiner onde os dados do usuário serão exibidos.
 
 JavaScript - Função 
+
 ![image](https://github.com/user-attachments/assets/11018793-e34c-410f-b15f-7722d9a0060b)
 
 Seleção de Elementos: document.getElementById() para pegar o botão que será clicado (fetchButton) e o contêiner que exibirá os dados do usuário (userInfoDiv).
 Evento de Clique: Quando o botão é clicado, ele aciona a função fetchRandomUser().
+
+
 
 Função do Fetch Assincrona:
 ![image](https://github.com/user-attachments/assets/1d803b24-8f6b-4eaa-a28c-e16235bc0d7f)
