@@ -51,6 +51,8 @@ Além disso, o tratamento de erros foi implementado para garantir que, se algo d
 Essa PoC é um bom ponto de partida para entender como consumir APIs e pode ser expandida para projetos maiores, como dashboards que atualizam informações em tempo real ou qualquer aplicação que dependa de dados externos.
 
 
+
+
 #PRINT DA EXECUÇÃO DO CODIGO: 
 
 ![image](https://github.com/user-attachments/assets/849e982f-d25d-4c5a-8372-73bc774d8b5c)
